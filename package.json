@@ -1,0 +1,51 @@
+{
+  "name": "react-sync-store",
+  "version": "0.0.1",
+  "description": "A tiny type-safe state store for React. Selector-based subscriptions inside components, full state access and reactive watchers outside. Zero unnecessary re-renders, no providers, no boilerplate.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/liderbektas/react-sync-store"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "react store",
+    "state management",
+    "global state",
+    "useSyncExternalStore",
+    "lightweight state",
+    "external store",
+    "react state",
+    "selector",
+    "subscribe",
+    "watch",
+    "typescript",
+    "reactive"
+  ],
+  "author": "liderbektas",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
