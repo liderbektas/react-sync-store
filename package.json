@@ -1,5 +1,5 @@
 {
-  "name": "react-sync-store",
+  "name": "@liderbektas/react-sync-store",
   "version": "0.0.1",
   "description": "A tiny type-safe state store for React. Selector-based subscriptions inside components, full state access and reactive watchers outside. Zero unnecessary re-renders, no providers, no boilerplate.",
   "main": "dist/index.js",
