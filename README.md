@@ -3,7 +3,7 @@
 A tiny (**<1KB**) type-safe state store for React. Selector-based subscriptions inside components, full state access and reactive watchers outside. Zero unnecessary re-renders, no providers, no boilerplate.
 
 ```bash
-npm install react-sync-store
+npm install @liderbektas/react-sync-store
 ```
 
 ---
@@ -23,7 +23,7 @@ Most state management libraries are either too complex or too magical. `react-sy
 ## Quick Start
 
 ```ts
-import { createStore } from "react-sync-store";
+import { createStore } from "@liderbektas/react-sync-store";
 
 const useCounter = createStore({ count: 0, name: "Counter" });
 ```
@@ -136,7 +136,7 @@ console.log(count); // 0
 A todo app that demonstrates every feature — store creation, component subscriptions with selectors, state updates, derived values, and reactive watchers outside React.
 
 ```ts
-import { createStore } from "react-sync-store";
+import { createStore } from "@liderbektas/react-sync-store";
 
 // Create store
 const useTodos = createStore({
