@@ -1,16 +1,16 @@
-# react-sync-store
+# lite-zustand
 
 A tiny (**<1KB**) type-safe state store for React. Selector-based subscriptions inside components, full state access and reactive watchers outside. Zero unnecessary re-renders, no providers, no boilerplate.
 
 ```bash
-npm install @liderbektas/react-sync-store
+npm install lite-zustand
 ```
 
 ---
 
-## Why react-sync-store?
+## Why lite-zustand?
 
-Most state management libraries are either too complex or too magical. `react-sync-store` does one thing and does it well: **gives you global state that works everywhere** — inside React components with surgical re-renders, and outside React with direct access and reactive watchers.
+Most state management libraries are either too complex or too magical. `lite-zustand` does one thing and does it well: **gives you global state that works everywhere** — inside React components with surgical re-renders, and outside React with direct access and reactive watchers.
 
 - **< 1KB** gzipped. No dependencies except React.
 - **Zero unnecessary re-renders.** Components only re-render when selected state actually changes.
@@ -23,7 +23,7 @@ Most state management libraries are either too complex or too magical. `react-sy
 ## Quick Start
 
 ```ts
-import { createStore } from "@liderbektas/react-sync-store";
+import { createStore } from "lite-zustand";
 
 const useCounter = createStore({ count: 0, name: "Counter" });
 ```
@@ -136,7 +136,7 @@ console.log(count); // 0
 A todo app that demonstrates every feature — store creation, component subscriptions with selectors, state updates, derived values, and reactive watchers outside React.
 
 ```ts
-import { createStore } from "@liderbektas/react-sync-store";
+import { createStore } from "lite-zustand";
 
 // Create store
 const useTodos = createStore({

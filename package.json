@@ -1,12 +1,12 @@
 {
-  "name": "@liderbektas/react-sync-store",
+  "name": "lite-zustand",
   "version": "0.0.1",
-  "description": "A tiny type-safe state store for React. Selector-based subscriptions inside components, full state access and reactive watchers outside. Zero unnecessary re-renders, no providers, no boilerplate.",
+  "description": "A tiny, type-safe React state manager built on useSyncExternalStore. Granular re-renders via selectors, reactive watchers with previous/next diffing, and direct get/set access outside components — no providers, no boilerplate, no overhead.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "repository": {
-    "url": "https://github.com/liderbektas/react-sync-store"
+    "url": "https://github.com/liderbektas/lite-zustand"
   },
   "exports": {
     ".": {
@@ -30,6 +30,8 @@
     "react",
     "react store",
     "state management",
+    "zustand",
+    "redux",
     "global state",
     "useSyncExternalStore",
     "lightweight state",
